@@ -43,7 +43,7 @@ def main():
         st.subheader("Training-Validate")
         fastmode = st.sidebar.checkbox("Fast")
         batchsize = st.sidebar.number_input('Batch Size',100)
-        decoder = ["bestpath","beamsearch"]
+        decoder = ["bestpath","beamsearch","wordbeamsearch"]
         choices_decoder = st.sidebar.selectbox("Decoder", decoder)
         path = "./data"
         f_path = pathlib.Path(path)
